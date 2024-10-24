@@ -111,7 +111,13 @@ public class LinearCalculator{
     //You will need to concatenate to the string 
     //the results from findSymmetry() and Midpoint()
     public String printInfo(){
-    
+        String str = "The two points are: (" + x1 + "," + y1 + ") and (" + x2 + "," + y2 + ")";
+        str += "\nThe equation of the line between these points is: " + equation();
+        str += "\nThe slope of this line is: " + slope();
+        str += "\nThe y-intercept of the line is: " + yInt();
+        str += "\nThe distance between the two points is: " + distance();
+        str += "\n" + findSymmetry();
+        str += "\n" + Midpoint(); 
         return "";
     }
 
